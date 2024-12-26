@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html lang="tr"> 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Karanlık/Aydınlık Modu</title>
+<style>
+   body {
+     background-color: white; 
+     color: black;
+      transition: background-color 0.3s, color 0.3s;
+     } 
+     .dark-mode { 
+        background-color: black; 
+        color: white;
+     } 
+     .toggle-button {
+     position: fixed; 
+    top: 10px;
+    right: 10px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1; 
+    border: none;
+    border-radius: 5px; 
+}
+    </style>
+    </head>
+    <body>
+    <button class="toggle-button" onclick="toggleMode()">Modu Değiştir</button>
+    <script> 
+    function toggleMode() { 
+    document.body.classList.toggle('dark-mode'); 
+    }
+     </script>
+      </body>
+       </html>
+
+    
+
